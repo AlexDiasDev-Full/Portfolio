@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receita Despesas APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- social links for refinedguides.com -->
+    <script
+      src="https://refinedguides.com/assets/social.js?linkColor=%233a3dbe&textColor=%23333"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h5>Total Balanço</h5>
+          <span id="balance">$0.00</span>
+        </div>
+        <div>
+          <h5>Renda</h5>
+          <span id="income">$0.00</span>
+        </div>
+        <div>
+          <h5>Despesa</h5>
+          <span id="expense">$0.00</span>
+        </div>
+      </header>
+
+      <section>
+        <h3>Transações</h3>
+        <ul id="transactionList" data-placeholder="Nenhuma Transação."></ul>
+      </section>
+
+      <section>
+        <h3>Adicionar</h3>
+
+        <form id="transactionForm">
+          <div>
+            <label for="type">
+              <input type="checkbox" name="type" id="type" checked />
+              <div class="option" data-option="Renda">
+                <span>Despesa</span>
+              </div>
+            </label>
+          </div>
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="amount">Valor</label>
+            <input
+              type="number"
+              name="amount"
+              value="0"
+              min="0"
+              step="any"
+              inputmode="decimal"
+              id="amount"
+              required
+              onfocus="this.select()"
+            />
+          </div>
+          <div>
+            <label for="date">Data</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <button type="submit">Registrar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <div class="autoral">Alex Web Design &#169 2025 | Todos os Direitos Reservados </div>
+  </body>
+</html>
