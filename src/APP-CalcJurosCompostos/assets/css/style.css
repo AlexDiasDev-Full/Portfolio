@@ -29,8 +29,8 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #calculator h2 {
