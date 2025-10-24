@@ -6,7 +6,7 @@ main{
  /* height: 100vh;*/
   justify-content: center;
   align-items: center;
-  min-height:100dvh;
+  min-height:100vh;
   min-width: none;
 }
 
@@ -85,3 +85,14 @@ button{
   user-select: none;
 }
 
+@media (max-width: 350px) {
+  #menu-btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 90%;
+  }
+}
