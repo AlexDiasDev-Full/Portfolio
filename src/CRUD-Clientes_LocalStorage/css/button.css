@@ -47,3 +47,15 @@ button.red{
         height:100%;
     }
 }
+
+@media (max-width: 350px) {
+  #menu-btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 90%;
+  }
+}
