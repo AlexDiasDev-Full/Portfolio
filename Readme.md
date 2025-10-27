@@ -84,7 +84,8 @@ Quer conversar sobre tecnologia, design ou possíveis colaborações?
 
 ## 📝 Créditos
 
-Design e código criados por © 2025 **Alex Web Design** | Todos os direitos reservados.
+Design e código criados por **Alex Web Design** © 2025 | Todos os direitos reservados.
  
 
 ---
+
