@@ -1,6 +1,6 @@
 # 🌐 Portfólio | Alex Dias
 
-![Preview do Portfólio](./images/PORTFOLIO-01.jpg)
+![Preview do Portfólio](./images/PORTFOLIO-01.png)
 
 ## 🧑‍💻 Sobre mim
 
@@ -88,5 +88,6 @@ Design e código criados por **Alex Web Design** © 2025 | Todos os direitos res
  
 
 ---
+
 
 
