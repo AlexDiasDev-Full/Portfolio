@@ -71,7 +71,6 @@ Quer conversar sobre tecnologia, design ou possíveis colaborações?
 
 📍 **Local:**  - Brasil
 
-📧 **E-mail:** [ale.xxdias@hotmail.com](mailto:ale.xxdias@hotmail.com)
 🌐 **Site:** [Portfolio](https://alexdiasdev-full.github.io/Portfolio/) 
 ---
 
@@ -88,6 +87,7 @@ Design e código criados por **Alex Web Design** © 2025 | Todos os direitos res
  
 
 ---
+
 
 
 
