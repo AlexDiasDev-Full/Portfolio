@@ -62,6 +62,7 @@ Aqui estão alguns dos meus projetos desenvolvidos:
 * **APP APP Juros Compostos** — Aplicativo mobile para calculo de juros compostos.
 * **APP To Do List** — Aplicativo para gerenciamento de tarefas.
 * **App Consumo de API Viacep** — Projeto integrando API do viacep, e interface mobile.
+* **Web Construtor** — Aplicação feita para construção civil, perfeita para acompanhamento de projetos e canteiro de obras.
 
 ---
 
@@ -87,6 +88,7 @@ Design e código criados por **Alex Web Design** © 2025 | Todos os direitos res
  
 
 ---
+
 
 
 
