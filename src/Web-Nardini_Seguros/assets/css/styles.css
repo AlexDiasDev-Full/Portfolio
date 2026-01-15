@@ -413,7 +413,9 @@ the website, in dark theme
   font-weight: var(--font-medium);
 }
 
-.button--link:hover .button__icon{
+
+.button--link:hover,
+.button__icon {
   transform: translateX(.25rem);
 }
 
@@ -726,10 +728,7 @@ the website, in dark theme
   height: 100%;
   padding: 1rem 1rem 1rem 0;
   background: none;
-
   color: var(--text-color);
-
-  
   border: none;
   outline: none;
   z-index: 1;
@@ -943,8 +942,6 @@ the website, in dark theme
   .Banner_footer {  /* nardini logo */
     margin-top: 10px;
   }
-
-
 }
 
 /* folder Baneer Mantem margem abaixo do headerabout */
@@ -958,10 +955,23 @@ the website, in dark theme
        grid-template-columns: none;
        
   }
-
-
 }
 
+@media screen and (max-width: 408px) {
+    .home__title{
+    font-size: 25px;
+  }
+  .contact__img {
+    width: 310px;
+  }
+ .button--flex--contact {
+   width: 310px;
+   display: inline-flex;
+   align-items: center;
+   column-gap: .5rem;
+ }
+
+}
 
 /* For medium devices */
 @media screen and (min-width: 576px){
