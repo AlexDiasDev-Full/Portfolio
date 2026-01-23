@@ -1,0 +1,41 @@
+/*--=============== SPONSORS Patrocinado ==================*/
+.sponsor__container {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  row-gap: 3.5rem;
+  margin-top: -150px;
+}
+
+.sponsor__content:hover .sponsor__img {
+  filter: invert(0.1);
+  background-color: blue;
+  border-radius: 20px;
+}
+
+.sponsor__img {
+  width: 90px;
+  transition: var(--img-transition);
+}
+
+.sponsor__title{
+  font-size: var(--big-font-size);
+  line-height: 140%;
+  margin-bottom: var(--mb-1);
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
+
+.sponsor__description{
+  margin-bottom: var(--mb-1);
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+
+}
+
+
+@media screen and (max-width: 1080px) {
+  .sponsor__container {
+      margin-top: -80px;
+      margin-bottom: 30px;
+  }
+}

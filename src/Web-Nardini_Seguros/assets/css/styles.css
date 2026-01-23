@@ -139,12 +139,14 @@ Color changes in some parts of
 the website, in dark theme 
 ==========*/
 
+.dark-theme .testimonials,
 .dark-theme .footer.footer,
 .dark-theme .steps__bg,
 .dark-theme .questions{
   background-color: var(--first-color-dark);
 }
 
+.dark-theme .testimonial-card,
 .dark-theme .button,
 .dark-theme .product__circle,
 .dark-theme .footer__subscribe{
@@ -342,6 +344,7 @@ the website, in dark theme
   display: grid;
   justify-items: center;
   row-gap: 3.5rem;
+  margin-top: -20px;
 }
 
 .home__social-follow{
@@ -411,46 +414,6 @@ the website, in dark theme
 .button--link{
   color: var(--first-color);
   font-weight: var(--font-medium);
-}
-
-
-.button--link:hover,
-.button__icon {
-  transform: translateX(.25rem);
-}
-
-/*--=============== SPONSORS Patrocinado r==================*/
-.sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-items: center;
-  row-gap: 3.5rem;
-  margin-top: -50px;
-}
-
-.sponsor__content:hover .sponsor__img {
-  filter: invert(0.1);
-  background-color: blue;
-  border-radius: 20px;
-}
-
-.sponsor__img {
-  width: 90px;
-  transition: var(--img-transition);
-}
-
-.sponsor__title{
-  font-size: var(--big-font-size);
-  line-height: 140%;
-  margin-bottom: var(--mb-1);
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
-}
-
-.sponsor__description{
-  margin-bottom: var(--mb-1);
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
-
 }
 
 
@@ -765,6 +728,49 @@ the website, in dark theme
   font-size: var(--smaller-font-size);
   z-index: 10;
 }
+
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+}
+
+.footer-col p {
+    line-height: 1.8;
+    color: #cbd5e0;
+    font-size: 0.95rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #007bff;
+}
+
 
 /*=============== FOOTER ===============*/
 .footer {
