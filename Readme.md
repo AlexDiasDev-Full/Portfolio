@@ -65,6 +65,8 @@ Aqui estão alguns dos meus projetos desenvolvidos:
 * **Web Site Construtor** — Aplicação feita para construção civil, 
 perfeita para acompanhamento de projetos e canteiro de obras.
 * **Web Site Terra&Vida** — Criado para designer botânicos de plantas, terrários incríveis para seus escritórios ou apartamentos.
+* **Web Site Nardini Seguros** —  Website Responsivo Nardini Seguros, com um portfólio amplo em vários seguimentos em seguros / Automotivo / Residencial / Condomínio / Presidência Privada / Seguro de Vida / Transporte Frotas / Viagem / Rural.
+* **Web Site Nossa Obra** — Website Responsivo Nossa Obra Design, com objetivo de ser uma plataforma de divulgação para locação de ferramentas da construção civil.
 
 ---
 
