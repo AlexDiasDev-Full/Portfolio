@@ -12,7 +12,9 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <link rel="stylesheet" href="assets/css/slide.css">
+        <link rel="stylesheet" href="assets/css/sponsors.css">
+        <link rel="stylesheet" href="assets/css/depoimento.css">
         <title>Nardini Seguros</title>
     </head>
     <body>
@@ -67,8 +69,7 @@
 
         <main class="main">
              <!--==================== HOME ====================-->
- 
-            <section class="home" id="home">
+             <section class="home" id="home">
 
                 <div>
                 <img src="assets/img/Banner Nardini.jpg" alt="" class="home__img_full"> 
@@ -86,7 +87,7 @@
                         </p>
                         <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="button button--flex">
                             Fale com Especialista 
-                            <i class="ri-arrow-right-down-line button__icon"></i> 
+                            <i class="ri-arrow-right-up-line button__icon"></i> 
                             <i class="ri-whatsapp-line"></i>
                         </a><br><br><br>
                         <p class="home__description">
@@ -114,6 +115,7 @@
                 </div>
 
             </section>
+
             <!--=============== SPONSORS Patrocinado r==================-->
             <section class="sponsor section" id="sponsor">
                 <div class="sponsor__container container grid">
@@ -146,6 +148,95 @@
                     </div>
                 </div>
             </section>
+
+            <!--==================== HOME SLIDE ====================-->
+            <section class="slider-container">
+                <div class="slider">
+                    <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1920');">
+                        <div class="slide__content">
+                            <h1>Sua tranquilidade na estrada</h1>
+                            <p>Proteção completa para seu veículo com assistência 24h em todo o Brasil.</p>
+                            <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="cta-button">Cotar Seguro Auto</a>
+                        </div>
+                    </div>
+                    
+                    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1920');">
+                        <div class="slide__content">
+                            <h1>Seu lar, seu refúgio seguro</h1>
+                            <p>Segurança para sua casa e sua família contra imprevistos e danos.</p>
+                            <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="cta-button">Proteger Minha Casa</a>
+                        </div>
+                    </div>
+
+                    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&q=80&w=1920');">
+                        <div class="slide__content">
+                            <h1>O melhor cuidado para quem você ama</h1>
+                            <p>Planeje o futuro da sua família com coberturas personalizadas.</p>
+                            <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="cta-button">Conhecer Planos de Vida</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-nav">
+                    <button id="prev">&#10094;</button>
+                    <button id="next">&#10095;</button>
+                </div>
+            </section>
+
+            <div class="contact-footer">
+                <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+                <a href="tel:+5535997324856" class="contact-btn phone">Ligar Agora</a>
+            </div>
+
+            <script src="slide.js"></script>
+
+            <!--=======================DEPOIMENTOS =====================-->
+
+            <section class="testimonials">
+            <div class="container">
+                <h2 class="depoimento_section-title">O Que Nossos Clientes Dizem</h2>
+                <div class="testimonial-grid">
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"A Nardini Seguradora me atendeu prontamente quando precisei de guincho na madrugada. Serviço impecável e rápido!"</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=19" alt="Cliente 1">
+                            <div>
+                                <h4>Ricardo Santos</h4>
+                                <span>Seguro Auto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Fiz o seguro residencial e hoje durmo muito mais tranquila. O atendimento personalizado da equipe é o diferencial."</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=12" alt="Cliente 2">
+                            <div>
+                                <h4>Maria Oliveira</h4>
+                                <span>Seguro Residencial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"O seguro de vida me deu a segurança que eu precisava para o futuro dos meus filhos. Preço justo e transparência."</p>
+                        <div class="client-info">
+                            <img src="https://i.pravatar.cc/150?u=23" alt="Cliente 3">
+                            <div>
+                                <h4>André Souza</h4>
+                                <span>Seguro de Vida</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about">
                 <div class="about__container grid">
@@ -234,7 +325,7 @@
                         <img src="assets/img/sobre-seg-automoveis-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Automotivo</h3>
-                        <span class="product__price">Cobertura completa para o seu veiculo contra colisões, furto e danos a terceiros, com socorro mecânico sempre que você precisar.</span>
+                        <span class="product__price">Cobertura completa para o seu veiculo contra colisões, furto e danos a terceiros, com socorro mecânico sempre que você precisar.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Automotivo."  target="_blank" class="button--flex product__button">
@@ -247,7 +338,7 @@
                         <img src="assets/img/sobre-seg-residencial-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Residencial</h3>
-                        <span class="product__price">Muito além do incêndio, oferece assistência 24h e cobertura contra roubos e danos elétricos para o seu lar.</span>
+                        <span class="product__price">Muito além do incêndio, oferece assistência 24h e cobertura contra roubos e danos elétricos para o seu lar.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Residencial."  target="_blank" class="button--flex product__button">
@@ -260,7 +351,7 @@
                         <img src="assets/img/sobre-seg-condominios-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Condominios</h3>
-                        <span class="product__price">Proteção obrigatória e essencial para áreas comuns e unidades, garantindo segurança jurídica e financeira para síndicos e moradores.</span>
+                        <span class="product__price">Proteção obrigatória e essencial para áreas comuns e unidades, garantindo segurança jurídica e financeira para síndicos e moradores.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Condominios."  target="_blank" class="button--flex product__button">
@@ -273,7 +364,7 @@
                         <img src="assets/img/sobre-seg-empresarial-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Empresarial</h3>
-                        <span class="product__price">Soluções sob medida para proteger o patrimônio de sua empresa, cobrindo desde a estrutura física e equipamentos até a responsabilidade civil.</span>
+                        <span class="product__price">Soluções sob medida para proteger o patrimônio de sua empresa, cobrindo desde a estrutura física e equipamentos até a responsabilidade civil.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Empresarial."  target="_blank" class="button--flex product__button">
@@ -286,7 +377,7 @@
                         <img src="assets/img/sobre-seg-transportes-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Transportes</h3>
-                        <span class="product__price">Segurança total para cargas e mercadorias, protegendo contra roubos, danos e acidentes durante todo o trajeto logístico.</span>
+                        <span class="product__price">Segurança total para cargas e mercadorias, protegendo contra roubos, danos e acidentes durante todo o trajeto logístico.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Transportes."  target="_blank" class="button--flex product__button">
@@ -299,7 +390,7 @@
                         <img src="assets/img/sobre-seg-viagem-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Viagem</h3>
-                        <span class="product__price">Assistência completa para destinos nacionais e internacionais, incluindo coberturas médicas, extravio de bagagem e cancelamento de voos.</span>
+                        <span class="product__price">Assistência completa para destinos nacionais e internacionais, incluindo coberturas médicas, extravio de bagagem e cancelamento de voos.</span><br>
 
                         <button class="button--flex product__button">
                                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguro Viagem."  target="_blank" class="button--flex product__button">
@@ -311,7 +402,7 @@
                         <img src="assets/img/sobre-seg-previdencia-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Previdência Privada</h3>
-                        <span class="product__price">Planejamento inteligente para a aposentadoria ou realização de projetos de longo prazo, com flexibilidade de investimentos e benefícios tributários.</span>
+                        <span class="product__price">Planejamento inteligente para a aposentadoria ou realização de projetos de longo prazo, com flexibilidade de investimentos e benefícios tributários.</span><br>
 
                         <button class="button--flex product__button">
 
@@ -324,7 +415,7 @@
                         <img src="assets/img/sobre-seg-vida-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Vida e Acidentes Pessoais</h3>
-                        <span class="product__price">Amparo financeiro para você e seus beneficiários em momentos difíceis, garantindo a manutenção do padrão de vida e tranquilidade familiar.</span>
+                        <span class="product__price">Amparo financeiro para você e seus beneficiários em momentos difíceis, garantindo a manutenção do padrão de vida e tranquilidade familiar.</span><br>
 
                         <button class="button--flex product__button">
                      
@@ -337,7 +428,7 @@
                         <img src="assets/img/sobre-seg-rural-768x499.jpg" alt="" class="product__img">
 
                         <h3 class="product__title">Seguro Rural</h3>
-                        <span class="product__price">Proteção estratégica para o agronegócio, cobrindo desde a safra e o rebanho até o maquinário agrícola contra imprevistos climáticos e operacionais.</span>
+                        <span class="product__price">Proteção estratégica para o agronegócio, cobrindo desde a safra e o rebanho até o maquinário agrícola contra imprevistos climáticos e operacionais.</span><br>
 
                         <button class="button--flex product__button">
                        
@@ -473,15 +564,25 @@
                                 <h3 class="contact__subtitle">Nos escreva por e-mail</h3>
                                 <span class="contact__description">
                                     <i class="ri-mail-line contact__icon"></i>
-                                    silvia@nardinicorretora.com.br
+                                    <a href="mailto:silvia@nardinicorretora.com.br" class="footer-link">silvia@nardinicorretora.com.br</a>
                                 </span><br>
-
-                         <button class="button button--flex--contact">
-                            
-                            <i class="ri-arrow-right-up-line button__icon"></i>
-                             <a href="mailto:silvia@nardinicorretora.com.br" class="footer-link">silvia@nardinicorretora.com.br</a>
-                        </button>
                             </div>
+
+                            <div class="footer-col">
+                                <h4>Nossos Seguros</h4>
+                                <ul>
+                                    <li><a href="#products">Seguro Automóvel</a></li>
+                                    <li><a href="#products">Seguro Residencial</a></li>
+                                    <li><a href="#products">Seguro Condominios</a></li>
+                                    <li><a href="#products">Seguro Empresarial</a></li>
+                                    <li><a href="#products">Seguro Transportes</a></li>
+                                    <li><a href="#products">Seguro Viagem</a></li>
+                                    <li><a href="#products">Seguro Previdência Privada</a></li>
+                                    <li><a href="#products">Seguro Vida e Acidentes Pessoais</a></li>
+                                    <li><a href="#products">Seguro Rural</a></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                     <form action="" class="contact__form">
@@ -528,9 +629,10 @@
                 </div>
 
                 <div class="footer__content">
+                 
                     <h3 class="footer__title">Contati-nos</h3>
-
                     <ul class="footer__data">
+                        
                         <li class="footer__information">Visite-nos em nossas redes sociais.</li>
                         
                         <div class="footer__social">
@@ -559,7 +661,8 @@
                 </div>
             </div>
 
-            <p class="footer__copy"> By Alex Web Design &#169; Todos os Direitos Reservados.</p>
+            <p class="footer__copy"> © 2026 Nardini Corretora de Seguros.<br> Todos os direitos reservados.<br>
+            CNPJ: 00.000.000/0001-00 | Registro SUSEP: 202052673</p>
         </footer>
         
         <!--=============== SCROLL UP ===============-->
@@ -572,5 +675,8 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+
+        <!--=============== slide JS ===============-->
+        <script src="assets/js/slide.js"></script>
     </body>
 </html>
