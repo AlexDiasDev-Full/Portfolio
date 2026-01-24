@@ -352,36 +352,12 @@ img {
   transform: translateX(.25rem);
 }
 
-.fotos__buttons {
-  background-color: var(--first-color);
-}
-/*=========== BUTTON WHATSAPP ===============*/
-.whatsapp-button button {
-    width: 88%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: none;
-    background-color: #73da63 ;
-    padding: 0.62rem;
-    border-radius: 20px;
-    cursor: pointer;
-    justify-content: center;
-    transition: transform .4s;
+/* Botão "Ver Todos" no último card */
+.fotos__buttons {  
+        margin-bottom: 1rem;
+        text-align: center;
 }
 
-.whatsapp-button button:hover {
-    background-color: #8ced7d;
-    transform: translateY(-.25rem);
-}
-
-.whatsapp-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 600;
-    color: #fff;
-}
 
 /*=============== ABOUT ===============*/
 .about__container {
@@ -530,10 +506,14 @@ img {
 
 .projects .section__title {
   color: var(--white-color);
+        text-align: center;
+        margin-bottom: 2rem;
 }
 
 .projects__container {
   padding-block: 1.5rem 3rem;
+        display: grid;
+        gap: 2rem;
 }
 
 .projects__card {
@@ -541,29 +521,46 @@ img {
   border: 2px solid transparent;
   background-clip: content-box;
   transition: border-color .4s;
+  overflow: hidden; /* Garante que a imagem não saia do card */
+     
 }
 
 .projects__card:hover {
   border-color: var(--first-color);
+  transform: translateY(-10px);
+  transform: translateY(-.25rem);
+}
+.projects__img {
+  object-fit: contain; /* Ajusta a imagem sem cortar */
+  background-color: #f9f9f9;
+    
 }
 
 .projects__data {
   padding: 1.5rem 1rem 3rem;
+
 }
 
 .projects__title {
   font-size: var(--h2-font-size);
   margin-block: .5rem;
+  color: var(--title-color);
+  text-transform: uppercase;
 }
 
 .projects__date {
   display: block;
   font-weight: var(--font-medium);
   color: var(--title-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: var(--small-font-size);
+  font-style: italic;
 }
 
-
+.projects__data p {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.5rem;
+}
 
 /*=============== CONTACT ===============*/
 .contact {
