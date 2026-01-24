@@ -10,11 +10,11 @@
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
-      <!--=============== SWIPER CSS ===============-->
+      <!--===============  CSS  ===============-->
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/styles.css"> 
+      <link rel="stylesheet" href="assets/css/paginacao.css">
+      <link rel="stylesheet" href="assets/css/whatsapp.css">
 
       <title>APP Nossa Obra - Alex Web Design</title>
    </head>
@@ -262,11 +262,13 @@
          </section>
 
          <!--==================== PRODUTOS ====================-->
+<div class="projects__content" >
+
          <section class="projects section" id="projects">
             <span class="section__subtitle">NOSSOS PRODUTOS</span>
             <h2 class="section__title">Os mais pedidos<br> Ferramentas</h2>
 
-            <div class="projects__container container grid">
+            <div class="projects__container container grid" id="projects-wrapper">
                <article class="projects__card">
                   <img src="assets/img/NS-ANDAIMES.png" alt="image" class="projects__img">
 
@@ -284,11 +286,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em ANDAIMES."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="ANDAIMES">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
 
@@ -309,11 +310,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em BETONEIRA."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="BETONEIRA">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
 
@@ -334,11 +334,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em COMPACTADOR_SAPO."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="COMPACTADOR (SAPO)">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
 
@@ -359,11 +358,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em CONTAINER."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="CONTAINER">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -383,11 +381,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em CORTADORA_CONCRETO."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="CORTADORA DE CONCRETO">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -407,11 +404,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em ESCORAS_METALICAS."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="ESCORAS METALICAS">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -431,11 +427,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em MARTELETE_30KL."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                  <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="MARTELETE 30KL">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -455,11 +450,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em PERFURADOR_SOLO."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="PERFURADOR SOLO">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -479,11 +473,10 @@
                      * Consulte a loja para verificar outras possibilidades de periodicidade.
                      </p>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em SERRA_MARMORE."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="SERRA MARMORE">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
                <article class="projects__card">
@@ -506,17 +499,18 @@
                   <div class="fotos__buttons">
                         <a href="src/APP-Galeria-Fotos/index.html" class="button">Ver Todos</a>
                   </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-button"><a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, tenho interesse em TALHA_ELETRICA."  target="_blank">WHATSAPP
-                        <i class="ri-whatsapp-line"></i>
+                <div class="whatsapp-wrapper">
+                    <a href="#"  class="whatsapp-link" data-produto="TALHA ELETRICA">
+                        WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
-                    </button>
                 </div>
                </article>
-
             </div>
-         </section>
+                <div class="pagination__container" id="pagination">
+               </div>
 
+         </section>
+</div>
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
             <div class="container">
@@ -662,5 +656,11 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
+
+       <!--=============== whatsapp JS ===============-->
+      <script src="assets/js/whatsapp.js"></script>
+
+      <!--=============== paginacao JS ===============-->
+      <script src="assets/js/paginacao.js"></script>
    </body>
 </html>
