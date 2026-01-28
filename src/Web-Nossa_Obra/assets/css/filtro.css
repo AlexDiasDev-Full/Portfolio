@@ -37,6 +37,7 @@
     transform: translateY(-50%);
     font-size: 1.2rem;
     color: var(--first-color);
+    margin-top: 30px;
 }
 
 .filter__buttons {
@@ -60,4 +61,5 @@
 .filter__btn.active {
     background-color: var(--first-color);
     color: var(--white-color);
+
 }
