@@ -1,0 +1,28 @@
+/*=========== BUTTON WHATSAPP atualizado ===============*/
+
+.whatsapp-wrapper {
+    padding: 0 1.5rem 1.5rem;
+    margin-top: auto; /* Empurra o botão para o fim do card */
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+    transform: scale(1.02);
+}
+
+.whatsapp-link i {
+    font-size: 1.2rem;
+}
