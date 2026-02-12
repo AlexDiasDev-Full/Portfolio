@@ -17,6 +17,8 @@
       <link rel="stylesheet" href="assets/css/whatsapp.css">
       <link rel="stylesheet" href="assets/css/filtro.css">
       <link rel="stylesheet" href="assets/css/whatsapp_flutuante.css">
+      <link rel="stylesheet" href="assets/css/carrinho_flutuante.css">
+      <link rel="stylesheet" href="assets/css/botao_carrinho.css">
 
       <title>APP Nossa Obra - Alex Web Design</title>
    </head>
@@ -268,20 +270,43 @@
             </div>
          </section>
 
-         <!--==================== PRODUTOS ====================-->
-<div class="projects__filters container" id="projects">
-    <div class="search__box">
-        <input type="text" id="search-input" placeholder="Buscar de ferramentas (Ex.: Andaime...)">
-        <i class="ri-search-line"></i>
-     </div>
-    
-    <div class="filter__buttons">
-        <button class="filter__btn active" data-filter="todos">Todos</button>
-        <button class="filter__btn" data-filter="acesso">Acesso e Escoramento</button>
-        <button class="filter__btn" data-filter="obra">Construção Bruta</button>
-        <button class="filter__btn" data-filter="eletrica">Máquinas Elétricas</button>
+         <!--============== CARRINHO DE COMPRAS ====================-->
+      <div id="cart-icon" onclick="toggleCart()">
+         <i class="ri-shopping-cart-line"></i>
+          <span id="cart-count">0</span>
+      </div>
+
+<div id="cart-modal" class="cart__modal">
+    <div class="cart__content">
+        <span class="close-cart" onclick="toggleCart()">❌</span>
+        <h3 class="h3">Seu Orçamento</h3>
+        <div id="cart-items">
+            </div>
+        <div class="cart__footer">
+            <div class="cart__total">
+                Total: <span id="cart-total-value">R$ 0,00</span>
+            </div>
+            <button onclick="enviarCarrinhoWhatsapp()" class="button-modal">
+                Enviar Pedido via WhatsApp
+                <a><i class="ri-whatsapp-line"></i></a>
+            </button>
+        </div>
     </div>
 </div>
+         <!--==================== PRODUTOS ====================-->
+      <div class="projects__filters container" id="projects">
+         <div class="search__box">
+            <input type="text" id="search-input" placeholder="Buscar de ferramentas (Ex.: Andaime...)">
+            <i class="ri-search-line"></i>
+         </div>
+         
+         <div class="filter__buttons">
+            <button class="filter__btn active" data-filter="todos">Todos</button>
+            <button class="filter__btn" data-filter="acesso">Acesso e Escoramento</button>
+            <button class="filter__btn" data-filter="obra">Construção Bruta</button>
+            <button class="filter__btn" data-filter="eletrica">Máquinas Elétricas</button>
+         </div>
+      </div>
 
       <div class="projects__content" >
 
@@ -310,10 +335,14 @@
                      </p>
                   </div>
                 <div class="whatsapp-wrapper">
-                    <a href="#"  class="whatsapp-link" data-produto="ANDAIMES">
+                    <a href="#"  class="whatsapp-link" 
+                     data-produto="ANDAIMES">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
-                    </a> 
-                </div>
+                     </a> 
+                        <button  class="botao_carrinho" 
+                        onclick="adicionarAoCarrinho('{ANDAIMES}','{8,00}')"> Adicionar ao Orçamento
+                        </button>
+                  </div>
                </article>
 
                <article class="projects__card" data-category="obra">
@@ -337,6 +366,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="BETONEIRA">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{BETONEIRA}','{280,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
 
@@ -361,6 +393,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="COMPACTADOR (SAPO)">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{COMPACTADOR SAPO}', '{150,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
 
@@ -385,6 +420,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="CONTAINER">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{CONTAINER}','{200,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="eletrica">
@@ -408,6 +446,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="CORTADORA DE CONCRETO">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{CORTADORA DE CONCRETO}', '{110,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="acesso">
@@ -431,6 +472,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="ESCORAS METALICAS">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{ESCORAS METALICAS}', '{8,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="eletrico">
@@ -451,9 +495,12 @@
                      </p>
                   </div>
                   <div class="whatsapp-wrapper">
-                    <a href="#"  class="whatsapp-link" data-produto="MARTELETE 30KL">
+                    <a href="#"  class="whatsapp-link" data-produto="MARTELETE 30KG">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{MARTELETE 30KG}', '{150,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="eletrica">
@@ -477,6 +524,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="PERFURADOR SOLO">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{PERFURADOR SOLO}', '{150,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="eletrica">
@@ -500,6 +550,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="SERRA MARMORE">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{SERRA MARMORE}', '{90,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
                <article class="projects__card" data-category="eletrica">
@@ -523,6 +576,9 @@
                     <a href="#"  class="whatsapp-link" data-produto="TALHA ELETRICA">
                         WHATSAPP <i class="ri-whatsapp-line"></i>
                     </a> 
+                     <button  class="botao_carrinho" 
+                     onclick="adicionarAoCarrinho('{TALHA ELETRICA}', '{70,00}')"> Adicionar ao Orçamento
+                     </button>
                 </div>
                </article>
             </div>
@@ -668,19 +724,26 @@
          <i class="ri-arrow-up-line"></i>
       </a> 
       
-      <!--=============== SCROLLREVEAL ===============-->
+      <!--================ SCROLLREVEAL ================-->
       <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== SWIPER JS ===============-->
+      <!--================= SWIPER JS ==================-->
       <script src="assets/js/swiper-bundle.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
+      <!--================== MAIN JS ===================-->
       <script src="assets/js/main.js"></script>
-
-       <!--=============== whatsapp JS ===============-->
+      <!--================ whatsapp JS =================-->
       <script src="assets/js/whatsapp.js"></script>
-
-      <!--=============== paginacao JS ===============-->
+      <!--=============== paginacao JS =================-->
       <script src="assets/js/paginacao.js"></script>
+      <!--========= integração api(fetch) banco ========-->
+      <script src="assets/js/integracao_api_banco.js"></script>
+      <!--============ dom_inserir_deletar ===========-->
+      <script src="assets/js/dom_inserir_deletar.js"></script> 
+      <!--============ integração api banco ============-->
+<!--  <script src="assets/js/integracao_api_banco.js"></script> -->
+      <!--=================== server ===================-->
+<!--  <script src="server/index.js"></script>  -->
+      <!--=============== carrinho_flutuante ===============-->
+      <script src="assets/js/carrinho_flutuante.js"></script> 
+
    </body>
 </html>
