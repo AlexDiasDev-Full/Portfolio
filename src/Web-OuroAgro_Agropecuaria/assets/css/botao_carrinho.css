@@ -1,0 +1,52 @@
+/*=========== BUTTON ORÇAMENTO CARRINHO ===============*/
+
+.botao_carrinho {
+    padding: 0 1.5rem 1.5rem;
+    margin-top: auto; /* Empurra o botão para o fim do card */
+    
+}
+
+.botao_carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 12px;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 1.0rem;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.botao_carrinho:hover {
+    background-color: #128C7E;
+    transform: scale(1.02);
+}
+
+.button-modal {
+    border-radius: 10px;
+    border: none;
+    margin-top:  20px;
+    margin-right: 20px;
+    width: 100%;
+    background-color: #25D366;
+    color: aliceblue;
+    padding: .8rem .5rem .8rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button-modal:hover {
+    background-color: #128C7E;
+    transform: scale(1.02);
+}
+
+.button-modal i {
+    font-size: 1.2rem;
+}
