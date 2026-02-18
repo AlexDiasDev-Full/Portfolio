@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const cardsPerPage = 5; // Defina quantos itens quer por pagina
+    const cardsPerPage = 6; // Defina quantos itens quer por pagina
     const wrapper = document.getElementById("projects-wrapper");
     const allCards = Array.from(wrapper.getElementsByClassName("projects__card"));
     const paginationContainer = document.getElementById("pagination");
