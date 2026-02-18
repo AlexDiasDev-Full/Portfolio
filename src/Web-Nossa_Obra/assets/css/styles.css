@@ -409,6 +409,11 @@ img {
   margin-right: 2.5rem;
 }
 
+.mascote {
+  width: 30%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 
 /*=============== SERVICES ===============*/
 .services {
@@ -522,6 +527,7 @@ img {
   background-clip: content-box;
   transition: border-color .4s;
   overflow: hidden; /* Garante que a imagem não saia do card */
+  max-width: 364px;
      
 }
 
@@ -537,7 +543,7 @@ img {
 }
 
 .projects__data {
-  padding: 1.5rem 1rem 2rem;
+  padding: 1.5rem 1rem 1rem;
 
 }
 
@@ -651,6 +657,7 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
+  
 }
 
 .footer__logo span {
@@ -721,14 +728,20 @@ img {
   margin-top: 4rem;
 }
 
+.logo.footer {
+  width: 50%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
-  background-color: hsl(255, 5%, 75%);
+  background-color: hsl(100, 5%, 75%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(255, 5%, 65%);
+  background-color: hsl(101, 79%, 27%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -801,6 +814,7 @@ img {
   .footer__content {
     grid-template-columns: repeat(1, max-content);
   }
+  
 } 
 
 /* For medium devices */
@@ -1013,7 +1027,7 @@ img {
   }
 
   .projects__data {
-    padding: 2rem 1.5rem 4rem;
+    padding: 1rem 1rem 1rem;
   }
 
   .contact :is(.section__title, .section__subtitle) {
