@@ -56,7 +56,6 @@
 }
 
 .close-cart {
-    background-color: red;
     color: aliceblue;
     border-radius: 20px;
     width: 600px;
@@ -89,4 +88,66 @@
     font-size: 80%;
  }
 
+}
+
+
+/*=============== Barra de Rolagem ===============*/
+
+/* Container que envolve os itens do carrinho */
+#cart-items {
+    max-height: 400px; /* Ajuste esta altura conforme necessário */
+    overflow-y: auto;  /* Ativa a rolagem vertical quando o conteúdo excede a altura */
+    padding-right: 10px; /* Espaço para a barra não cobrir o ícone de lixeira */
+    margin-bottom: 1rem;
+}
+
+/* Personalização da Barra de Rolagem (Webkit - Chrome, Edge, Safari) */
+#cart-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+    background: var(--gray-border);
+    border-radius: 10px;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+    background: var(--black-color);
+    border-radius: 10px;
+}
+
+#cart-items::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color); /* Muda para a cor principal ao passar o mouse */
+}
+
+/* Estilização básica para os itens não ficarem colados */
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.ri-delete-bin-line {
+    cursor: pointer;
+    color: #ff4d4d;
+    margin-left: 10px;
+}
+
+/*============ Melhoria no Toque (Mobile UX) ==========*/
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0; /* Aumentado para facilitar o toque */
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.ri-delete-bin-line {
+    font-size: 1.25rem; /* Ícone um pouco maior no mobile */
+    color: #eb4d4b;
+    padding: 5px; /* Área de clique maior */
+    cursor: pointer;
 }
