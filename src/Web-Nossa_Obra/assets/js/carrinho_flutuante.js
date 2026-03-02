@@ -66,3 +66,15 @@ function enviarCarrinhoWhatsapp() {
 
     window.open(`https://api.whatsapp.com/send?phone=5535997324856&text=${mensagem}`);
 }
+
+// Para evitar que o fundo da página role enquanto o usuário está navegando dentro do carrinho
+
+function toggleCart() {
+    const modal = document.getElementById('cart-modal');
+    const isOpening = modal.style.display !== 'flex';
+    
+    modal.style.display = isOpening ? 'flex' : 'none';
+    
+    // Trava o scroll da página de fundo quando o modal abre
+    document.body.style.overflow = isOpening ? 'hidden' : 'auto';
+}
