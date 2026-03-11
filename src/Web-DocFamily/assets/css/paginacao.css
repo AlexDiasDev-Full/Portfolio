@@ -1,0 +1,35 @@
+/*=============== PAGINATION ===============*/
+.pagination__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.pagination__button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--first-color);
+    background-color: transparent;
+    color: var(--white-color);
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pagination__button.active {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.pagination__button:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste para esconder cards inativos */
+.projects__card.hide {
+    display: none;
+}

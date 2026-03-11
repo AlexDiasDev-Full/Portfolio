@@ -1,0 +1,100 @@
+/* Botão de Áudio */
+.voice__btn {
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Ajustado para melhor UX */
+    cursor: pointer;
+    color: var(--first-color);
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.ri-mic-line {
+    margin-left: 0; 
+}
+
+/* Tamanho amigável para mobile (Tap target size recomendado: 44x44px min) */
+@media screen and (max-width: 768px) {
+    .search__box .search__icon {
+        font-size: 1.3rem;
+        left: 0.8rem;
+    }
+    
+    .voice__btn {
+        font-size: 1.3rem;
+        right: 0.5rem;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+
+/* Efeito de gravação ativa */
+.voice__btn.recording {
+    color: #ff4d4d;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: translateY(-50%) scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.4); }
+    50% { transform: translateY(-50%) scale(1.1); opacity: 0.8; box-shadow: 0 0 0 10px rgba(255, 77, 77, 0); }
+    100% { transform: translateY(-50%) scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(255, 77, 77, 0); }
+}
+
+/* Ajuste de Estilo (Feedback Visual) */
+.projects__card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Quando o input está com foco (ou gravando), destaque a borda */
+.search__box:focus-within {
+    border-color: var(--first-color);
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.2);
+}
+
+/* Mensagem de "Vazio" */
+
+.search__empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    border: 2px dashed var(--gray-border);
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.search__empty i {
+    font-size: 3rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.search__empty p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.search__empty span {
+    color: var(--first-color);
+    font-weight: var(--font-bold);
+    font-style: italic;
+}
+
+.button--small {
+    padding: .75rem 1rem;
+    font-size: var(--small-font-size);
+}
+
+
