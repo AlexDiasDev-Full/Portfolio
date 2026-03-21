@@ -71,8 +71,21 @@
              <!--==================== HOME ====================-->
              <section class="home" id="home">
 
-                <div>
-                <img src="assets/img/Banner Nardini.jpg" alt="" class="home__img_full"> 
+                <style>
+                    /* Oculta o botão CTA do banner em telas de celular */
+                    @media screen and (max-width: 768px) {
+                        #banner-cta-btn {
+                            display: none !important;
+                        }
+                    }
+                </style>
+                <div style="position: relative; text-align: center; margin-bottom: 2rem; display: inline-block; width: 100%;">
+                <img src="assets/img/home_Seguro_Vida.png" alt="Banner Seguro" class="home__img_full" style="width: 100%; display: block;"> 
+                <a id="banner-cta-btn" href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros." target="_blank" class="button button--flex" style="position: absolute; bottom: 8%; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; justify-content: center; gap: 8px; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3); opacity: 0.85;">
+                    Simule seu Seguro Agora
+                    <i class="ri-arrow-right-up-line button__icon"></i> 
+                    <i class="ri-whatsapp-line"></i>
+                </a>
                 </div>
 
                 <div class="home__container container grid"  >
@@ -185,7 +198,7 @@
 
             <div class="contact-footer">
                 <a href="https://api.whatsapp.com/send?phone=5535997324856&text=Ola, venho do Site Nardini, tenho interesse em Seguros."  target="_blank" class="contact-btn whatsapp">WhatsApp</a>
-                <a href="tel:+5535997324856" class="contact-btn phone">Ligar Agora</a>
+                <a href="tel:035997324856" class="contact-btn phone">Ligar Agora</a>
             </div>
 
             <script src="slide.js"></script>
@@ -585,9 +598,20 @@
 
                         </div>
                     </div>
-                    <form action="" class="contact__form">
-                        <img src="assets/img/Maps.jpg" alt="" class="contact__img"><br>
-                    </form>
+                    <div class="contact__map" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                        <iframe 
+                            width="100%" 
+                            height="350" 
+                            style="border:0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" 
+                            loading="lazy" 
+                            allowfullscreen 
+                            src="https://maps.google.com/maps?q=R.%20Marechal%20Deodoro,%20519%20-%20Centro,%20Jacutinga%20-%20MG&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                        <a href="https://maps.google.com/?q=R.+Marechal+Deodoro,+519+-+Jacutinga+-+MG" target="_blank" class="button button--flex" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                            <i class="ri-map-pin-line"></i> 
+                            Traçar Rota até R. Marechal Deodoro, 519
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -621,9 +645,11 @@
                     <h3 class="footer__title">Nosso Endereço</h3>
 
                     <ul class="footer__data">
-                        <li class="footer__information">Rua: Marechal Deodoro, 519 - Centro</li>
-                        <li class="footer__information">Jacutinga-MG</li>
-                        <li class="footer__information">Cep.:37.590-000</li>
+                        <a href="https://maps.google.com/?q=R.+Marechal+Deodoro,+519+-+Jacutinga+-+MG" target="_blank" style="color: var(--text-color); transition: .3s;" onmouseover="this.style.color='var(--first-color)'" onmouseout="this.style.color='var(--text-color)'">
+                            <li class="footer__information">Rua: Marechal Deodoro, 519 - Centro</li>
+                            <li class="footer__information">Jacutinga-MG</li>
+                            <li class="footer__information">Cep.: 37.590-000</li>
+                        </a>
                     </ul>
                     <img class="Banner_footer" src="assets/img/Banner 01.jpg">
                 </div>
