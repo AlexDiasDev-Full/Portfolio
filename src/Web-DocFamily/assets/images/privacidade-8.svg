@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d3b2e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="shelfGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e7d32"/>
+      <stop offset="100%" style="stop-color:#1b5e20"/>
+    </linearGradient>
+    <linearGradient id="pharmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565c0"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bg8)" rx="12"/>
+  <circle cx="700" cy="100" r="140" fill="#2e7d32" opacity="0.15"/>
+  <circle cx="80" cy="380" r="100" fill="#1565c0" opacity="0.12"/>
+  <!-- Title -->
+  <text x="50" y="52" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4caf50">NOVOS PONTOS DE VENDA</text>
+  <text x="50" y="75" font-family="Arial, sans-serif" font-size="13" fill="#a5d6a7">Farmácias em Supermercados · Omnichannel · AFE Anvisa</text>
+  <!-- Supermarket floor -->
+  <rect x="30" y="360" width="480" height="10" rx="2" fill="#388e3c" opacity="0.4"/>
+  <!-- Supermarket shelves (left section - general store) -->
+  <rect x="40" y="170" width="190" height="195" rx="6" fill="#2e7d32" opacity="0.3" stroke="#4caf50" stroke-width="1"/>
+  <text x="135" y="192" font-family="Arial, sans-serif" font-size="11" fill="#a5d6a7" text-anchor="middle" font-weight="bold">SUPERMERCADO</text>
+  <!-- Shelf items (generic products) -->
+  <rect x="55" y="205" width="22" height="30" rx="3" fill="#ff7043"/>
+  <rect x="82" y="210" width="22" height="25" rx="3" fill="#ffb300"/>
+  <rect x="109" y="200" width="22" height="35" rx="3" fill="#26a69a"/>
+  <rect x="136" y="207" width="22" height="28" rx="3" fill="#ec407a"/>
+  <rect x="163" y="203" width="22" height="32" rx="3" fill="#7e57c2"/>
+  <rect x="50" y="240" width="175" height="5" rx="2" fill="#1b5e20" opacity="0.6"/>
+  <!-- 2nd row -->
+  <rect x="55" y="256" width="22" height="28" rx="3" fill="#29b6f6"/>
+  <rect x="82" y="252" width="22" height="32" rx="3" fill="#66bb6a"/>
+  <rect x="109" y="258" width="22" height="26" rx="3" fill="#ffa726"/>
+  <rect x="136" y="253" width="22" height="31" rx="3" fill="#ef5350"/>
+  <rect x="163" y="257" width="22" height="27" rx="3" fill="#ab47bc"/>
+  <rect x="50" y="290" width="175" height="5" rx="2" fill="#1b5e20" opacity="0.6"/>
+  <!-- 3rd row -->
+  <rect x="55" y="306" width="22" height="28" rx="3" fill="#80cbc4"/>
+  <rect x="82" y="308" width="22" height="26" rx="3" fill="#ffe082"/>
+  <rect x="109" y="304" width="22" height="30" rx="3" fill="#f48fb1"/>
+  <rect x="136" y="307" width="22" height="27" rx="3" fill="#80deea"/>
+  <rect x="163" y="305" width="22" height="29" rx="3" fill="#ce93d8"/>
+  <rect x="50" y="336" width="175" height="5" rx="2" fill="#1b5e20" opacity="0.6"/>
+  <!-- Divider line -->
+  <line x1="238" y1="175" x2="238" y2="360" stroke="#4caf50" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="238" y="168" font-family="Arial, sans-serif" font-size="9" fill="#4caf50" text-anchor="middle">SEGREGAÇÃO</text>
+  <!-- Pharmacy section (right) -->
+  <rect x="245" y="170" width="255" height="195" rx="6" fill="url(#pharmGrad)" opacity="0.5" stroke="#64b5f6" stroke-width="2"/>
+  <!-- Pharmacy cross sign -->
+  <rect x="338" y="178" width="70" height="30" rx="4" fill="#fff" opacity="0.9"/>
+  <text x="373" y="190" font-family="Arial, sans-serif" font-size="9" fill="#0d47a1" text-anchor="middle" font-weight="bold">FARMÁCIA</text>
+  <text x="373" y="202" font-family="Arial, sans-serif" font-size="7" fill="#1565c0" text-anchor="middle">AFE Anvisa</text>
+  <!-- Green cross -->
+  <rect x="415" y="181" width="20" height="4" rx="1" fill="#4caf50"/>
+  <rect x="420" y="176" width="10" height="14" rx="1" fill="#4caf50"/>
+  <!-- Digital kiosk -->
+  <rect x="260" y="200" width="100" height="140" rx="8" fill="#0d47a1" stroke="#64b5f6" stroke-width="2"/>
+  <rect x="266" y="206" width="88" height="100" rx="4" fill="#0a192f"/>
+  <!-- Kiosk screen -->
+  <rect x="270" y="210" width="80" height="35" rx="3" fill="#1565c0"/>
+  <text x="310" y="223" font-family="Arial, sans-serif" font-size="7" fill="#fff" text-anchor="middle" font-weight="bold">PEDIDO DIGITAL</text>
+  <text x="310" y="234" font-family="Arial, sans-serif" font-size="6" fill="#90caf9" text-anchor="middle">Retire seu pedido online</text>
+  <!-- CNPJ display on kiosk -->
+  <rect x="270" y="252" width="80" height="46" rx="3" fill="#0d1b2a"/>
+  <text x="310" y="264" font-family="Arial, sans-serif" font-size="6" fill="#4caf50" text-anchor="middle">CNPJ: 00.000.000/0001-00</text>
+  <text x="310" y="274" font-family="Arial, sans-serif" font-size="6" fill="#64b5f6" text-anchor="middle">AFE Anvisa: 6.01.001.000-0</text>
+  <text x="310" y="284" font-family="Arial, sans-serif" font-size="6" fill="#90caf9" text-anchor="middle">Licença Sanitária Própria</text>
+  <text x="310" y="294" font-family="Arial, sans-serif" font-size="6" fill="#ffcc02" text-anchor="middle">✓ AUTORIZADO ANVISA</text>
+  <!-- Kiosk base -->
+  <rect x="285" y="308" width="50" height="22" rx="4" fill="#0a2342"/>
+  <rect x="275" y="328" width="70" height="10" rx="3" fill="#0a2342"/>
+  <!-- Pharmacy medicine shelf -->
+  <rect x="375" y="215" width="110" height="115" rx="4" fill="#0d47a1" opacity="0.3"/>
+  <text x="430" y="232" font-family="Arial, sans-serif" font-size="9" fill="#90caf9" text-anchor="middle" font-weight="bold">Medicamentos</text>
+  <!-- Medicine boxes -->
+  <rect x="383" y="240" width="25" height="20" rx="2" fill="#ef5350"/>
+  <rect x="383" y="244" width="25" height="4" rx="1" fill="#b71c1c"/>
+  <rect x="413" y="238" width="25" height="22" rx="2" fill="#42a5f5"/>
+  <rect x="413" y="242" width="25" height="4" rx="1" fill="#0d47a1"/>
+  <rect x="443" y="240" width="25" height="20" rx="2" fill="#66bb6a"/>
+  <rect x="443" y="244" width="25" height="4" rx="1" fill="#2e7d32"/>
+  <rect x="383" y="268" width="25" height="18" rx="2" fill="#ffca28"/>
+  <rect x="413" y="270" width="25" height="16" rx="2" fill="#ab47bc"/>
+  <rect x="443" y="267" width="25" height="19" rx="2" fill="#26a69a"/>
+  <!-- Shelf lines -->
+  <rect x="380" y="262" width="112" height="3" rx="1" fill="#1565c0"/>
+  <rect x="380" y="290" width="112" height="3" rx="1" fill="#1565c0"/>
+  <text x="430" y="305" font-family="Arial, sans-serif" font-size="7.5" fill="#90caf9" text-anchor="middle">Tarjados · Controlados · OTC</text>
+  <!-- Omnichannel arrow -->
+  <path d="M508 255 L540 255" stroke="#4caf50" stroke-width="3" fill="none"/>
+  <polygon points="538,250 548,255 538,260" fill="#4caf50"/>
+  <!-- Right side panel -->
+  <rect x="555" y="110" width="210" height="260" rx="10" fill="#0a1628" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="660" y="133" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50" text-anchor="middle">OMNICHANNEL</text>
+  <line x1="570" y1="143" x2="750" y2="143" stroke="#1565c0" stroke-width="1"/>
+  <!-- Feature list -->
+  <circle cx="575" cy="162" r="6" fill="#4caf50"/>
+  <text x="588" y="166" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">Compra Online</text>
+  <circle cx="575" cy="186" r="6" fill="#4caf50"/>
+  <text x="588" y="190" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">Retirada na Farmácia</text>
+  <circle cx="575" cy="210" r="6" fill="#4caf50"/>
+  <text x="588" y="214" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">Entrega em Domicílio</text>
+  <circle cx="575" cy="234" r="6" fill="#64b5f6"/>
+  <text x="588" y="238" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">AFE Anvisa Própria</text>
+  <circle cx="575" cy="258" r="6" fill="#64b5f6"/>
+  <text x="588" y="262" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">Marketplace Logístico</text>
+  <circle cx="575" cy="282" r="6" fill="#64b5f6"/>
+  <text x="588" y="286" font-family="Arial, sans-serif" font-size="9" fill="#e8f5e9">Segregação Digital</text>
+  <!-- Lei badge -->
+  <rect x="570" y="300" width="180" height="50" rx="8" fill="#1565c0" opacity="0.5"/>
+  <text x="660" y="320" font-family="Arial, sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">Lei Sancionada Março/2026</text>
+  <text x="660" y="335" font-family="Arial, sans-serif" font-size="8" fill="#90caf9" text-anchor="middle">Farmácias em Supermercados</text>
+  <text x="660" y="348" font-family="Arial, sans-serif" font-size="8" fill="#90caf9" text-anchor="middle">Licença Sanitária Independente</text>
+  <!-- Bottom -->
+  <rect x="0" y="435" width="800" height="45" rx="0" fill="#0a1628"/>
+  <text x="400" y="462" font-family="Arial, sans-serif" font-size="11" fill="#4caf50" text-anchor="middle" font-weight="bold">DocFamily · Novos Pontos de Venda · Omnichannel Farmacêutico 2026</text>
+</svg>
