@@ -615,6 +615,9 @@ body.nav-active { overflow: hidden; }
   border: 2px solid var(--middle-blue-green_40);
   border-radius: var(--radius-12);
   transition: var(--transition-1);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .listing-card:is(:hover, :focus-visible) { border-color: var(--verdigris); }
