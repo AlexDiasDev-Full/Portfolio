@@ -195,12 +195,14 @@
               <div class="wrapper">
 
                 <div class="input-wrapper title-lg">
-                  <input type="text" name="location" placeholder="Locations" class="input-field">
+                  <input type="text" name="location" id="hero-location-input"
+                    placeholder="Ex: Médico, Clínica, Endereço" class="input-field">
 
                   <ion-icon name="location"></ion-icon>
                 </div>
 
-                <button class="btn has-before">
+                <button class="btn has-before"
+                  onclick="const loc = document.getElementById('hero-location-input').value; if(loc) window.open('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(loc), '_blank');">
                   <ion-icon name="search"></ion-icon>
 
                   <span class="span title-md" href="#span title-md" id="span title-md">Ache Agora</span>
@@ -245,8 +247,9 @@
                   - Médico: Flavio Matos de Melo <br>
                   - Convênio: Prefeitura<br>
                   - Clinica: CAPS<br>
-                  - Endereço: R.Santo Antonio <br>
+                  - Endereço: R.Santo Antonio, 107 <br>
                   - Centro Jacutinga-MG<br>
+                  - Tel.: <a href="tel:+553534434033" class="contact-link" target="_blank">(35) 3593-1255</a>
 
                 </p>
 
@@ -276,7 +279,7 @@
                   - Clinica: Ana Flávia<br>
                   - Endereço: R.Teixeira Rios, 227<br>
                   - Espirito Santo do Pinhal-SP<br>
-
+                  - Tel.: <a href="tel:+551936515769" class="contact-link" target="_blank">(19)3651-5769</a>
 
                 </p>
 
@@ -305,8 +308,8 @@
                   - Clinica: Integrale<br>
                   - Endereço: AV.Brasilia, 441 <br>
                   - Jardim Áurea / Mogi Mirin-SP<br>
-                  - Tel.:(19)3806-5220/3805-5007<br>
-
+                  - Tel.: <a href="tel:+551938065220" class="contact-link" target="_blank">(19)3806-5220</a><br>
+                  - Tel.: <a href="tel:+551938055007" class="contact-link" target="_blank">(19)3805-5007</a>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=AV.Brasilia%2C%20441%2C%20Jardim%20%C3%81urea%2C%20Mogi%20Mirim-SP"
@@ -334,7 +337,9 @@
                   - Clinica: Rossi<br>
                   - Endereço: R.Teixeira Rios, 259 <br>
                   - Espirito Santo do Pinhal-SP<br>
-                  - Tel.:(19)3651-3148/3651-3498<br>
+                  - Tel.: <a href="tel:+551936513498" class="contact-link" target="_blank">(19)3651-3498</a><br>
+                  - Tel.: <a href="tel:+551936513148" class="contact-link" target="_blank">(19)3651-3148</a>
+
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=R.Teixeira%20Rios%2C%20259%2C%20Espirito%20Santo%20do%20Pinhal-SP"
@@ -362,7 +367,9 @@
                   - Clinica: Syriusmedical<br>
                   - End.: R.Barão do Rio Branco, 252<br>
                   - Centro Jacutinga-MG <br>
-                  - Tel.:(35)3042-1004/99811-8792 Zap<br>
+                  - Tel.: <a href="tel:+553530421004" class="contact-link" target="_blank">(35) 3042-1004</a><br>
+                  - WhatsApp: <a href="https://wa.me/5535998118702" class="contact-link" target="_blank">(35)
+                    99811-8792</a>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=R.Bar%C3%A3o%20do%20Rio%20Branco%2C%20252%2C%20Centro%20Jacutinga-MG"
@@ -385,12 +392,14 @@
 
                 <p class="card-text">
 
-                  - Médico: Francisco<br>
+                  - Médico: Francisco Ribeiro da Rosa<br>
                   - Convênio: Particular<br>
                   - Clinica: Francisco<br>
-                  - Endereço: R.Marechal Deodoro, <br>
+                  - Endereço: R.Marechal Deodoro, 713<br>
                   - Centro Jacutinga-MG <br>
-
+                  - Tel.: <a href="tel:+553534434033" class="contact-link" target="_blank">(35)3443-4033</a><br>
+                  - WhatsApp: <a href="https://wa.me/5535998685105" class="contact-link"
+                    target="_blank">(35)99868-5105</a>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=R.Marechal%20Deodoro%2C%20Centro%20Jacutinga-MG"
@@ -413,12 +422,12 @@
 
                 <p class="card-text">
 
-                  - Médico: Gisele<br>
+                  - Médico: Jéssica<br>
                   - Convênio: Particular<br>
                   - Clinica: Espaço Saúde<br>
                   - Endereço: R. Mal. Deodoro, 829 <br>
                   - Centro Jacutinga-MG <br>
-                  - Tel.: <a href="tel:+553534434903" class="contact-link">(35) 3443-4903</a><br>
+                  - Tel.: <a href="tel:+553534434903" class="contact-link" target="_blank">(35) 3443-4903</a><br>
 
                 </p>
 
@@ -446,8 +455,10 @@
                   - Convênio: Unimed<br>
                   - End.: R.Manoel Pereira, 27 <br>
                   - Santa Cruz - Itapira-SP <br>
-                  - Tel.:(19)99343-5404 zap <br>
-                  - 3863-3968/3863-0238 <br>
+                  - Tel.: <a href="tel:+551938633968" class="contact-link" target="_blank">(19) 3863-3968</a><br>
+                  - Tel.: <a href="tel:+551938630238" class="contact-link" target="_blank">(19) 3863-0238</a><br>
+                  - WhatsApp: <a href="https://wa.me/5519993435404" class="contact-link" target="_blank">(19)
+                    99343-5404</a>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=R.Manoel%20Pereira%2C%2027%2C%20Santa%20Cruz%2C%20Itapira-SP"
@@ -474,8 +485,9 @@
                   - Convênio: Particular<br>
                   - End.: Pça. Delfim Moreira, 88 <br>
                   - Centro - Jacutinga-MG <br>
-                  - Tel.:(35)3443-1320 <br>
-                  - 3443-3038/3443-1895 Res. <br>
+                  - Tel.: <a href="tel:+55353443-1320" class="contact-link" target="_blank">(35) 3443-1320</a><br>
+                  - Tel.: <a href="tel:+55353443-3038" class="contact-link" target="_blank">(35) 3443-3038</a><br>
+                  - Tel.: <a href="tel:+55353443-1895" class="contact-link" target="_blank">(35) 3443-1895 res</a><br>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=P%C3%A7a.%20Delfim%20Moreira%2C%2088%2C%20Centro%2C%20Jacutinga-MG"
@@ -502,7 +514,7 @@
                   - Convênio: Unimed<br>
                   - End.: Av. Quirino dos Santos, 210 <br>
                   - Centro - Espirito Santo do Pinhal-SP <br>
-                  - Tel.:(19)3651-5481 <br>
+                  - Tel.: <a href="tel:+551936515481" class="contact-link" target="_blank">(19) 3651-5481</a><br>
                   - CRM 77524 <br>
                 </p>
 
@@ -531,8 +543,9 @@
                   - Convênio: Unimed<br>
                   - End.: Rua: Barão do Rio Branco, 324 <br>
                   - Centro - Jacutinga-MG <br>
-                  - Tel.:(35)3443-3115 <br>
-                  - 3443-1529/3443-3107 <br>
+                  - Tel.: <a href="tel:+553534433115" class="contact-link" target="_blank">(35) 3443-3115</a><br>
+                  - Tel.: <a href="tel:+553534431529" class="contact-link" target="_blank">(35) 3443-1529</a><br>
+                  - Tel.: <a href="tel:+553534433107" class="contact-link" target="_blank">(35) 3443-3107</a><br>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Bar%C3%A3o%20do%20Rio%20Branco%2C%20324%2C%20Centro%2C%20Jacutinga-MG"
@@ -559,8 +572,8 @@
                   - Convênio: Unimed<br>
                   - End.: Pça. coronel Souza Ferreira, 32 <br>
                   - Centro - Itapira-SP <br>
-                  - Tel.:(19)3843-9300 <br>
-                  - Fax (19)3843-9301 <br>
+                  - Tel.: <a href="tel:+551938439300" class="contact-link" target="_blank">(19) 3843-9300</a><br>
+                  - Fax <a href="tel:+551938439301" class="contact-link" target="_blank">(19) 3843-9301</a><br>
                 </p>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=P%C3%A7a.%20coronel%20Souza%20Ferreira%2C%2032%2C%20Centro%2C%20Itapira-SP"
@@ -587,11 +600,11 @@
 
             <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">Sobre Nós</p>
 
-            <h2 class="headline-md" data-reveal="left">Doutores Experientes</h2>
+            <h2 class="headline-md" data-reveal="left">Conectando Você à Melhor Saúde</h2>
 
             <p class="section-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam
+              Na DocFamily, nosso objetivo é facilitar o acesso à saúde de qualidade, conectando você aos melhores
+              profissionais, clínicas e hospitais da sua região de forma rápida e prática.
             </p>
 
             <ul class="tab-list" data-reveal="left">
@@ -605,14 +618,14 @@
               </li>
 
               <li>
-                <button class="tab-btn">Estratégia</button>
+                <button class="tab-btn">Valores</button>
               </li>
 
             </ul>
 
             <p class="tab-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam a bibendum mi, sed condimentum
+              Acreditamos que cuidar da saúde deve ser simples. Transformamos a busca por atendimento em uma experiência
+              eficiente, garantindo que você e sua família encontrem o especialista ideal.
             </p>
 
             <div class="wrapper">
@@ -622,25 +635,25 @@
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Sonsectetur adipisicing elit</span>
+                  <span class="span">Ampla Rede de Especialistas</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Exercitation ullamco laboris</span>
+                  <span class="span">Busca Rápida e Localizada</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Eiusmod tempor incididunt</span>
+                  <span class="span">Fácil Acesso a Contatos</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Aolore magna aliqua</span>
+                  <span class="span">Foco no Seu Bem-Estar</span>
                 </li>
 
               </ul>
