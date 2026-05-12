@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Moteriol+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<!--style-->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    /************header************/
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 9%;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        z-index: 99;
+    }
+    
+    .logo {
+        font-size: 25px;
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cart-icon {
+        position: relative;
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    
+    /**********header final********/
+    
+    body {
+        color: #1b1a1a;
+        background: #e5e5e5 ;
+        font-family: Poppins, sans-serif;
+    }
+    
+    .container {
+        margin: 0 auto;
+        max-width: 330px;
+        min-width: 50%;
+      /*  width: 100%; */
+        background: transparent;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        background: #fdfcfc;
+        position: relative;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    ul li:first-child {
+        margin-top: 120px;
+    }
+    
+    ul li:last-child {
+        margin-bottom: 120px;
+    }
+    
+    ul li img {
+        height: 145px;
+        width: 145px;
+        border: 4px solid #000;
+        border-radius: 50%;
+        margin: 20px;
+        object-fit: fill;
+    }
+    
+    .game-info {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-right: 20px;
+    }
+    
+    .game-info h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.55rem; 
+        
+    }
+    
+    .game-info h3 {
+        font-size: 0.99rem;
+    }
+
+    @media (max-width: 800px) {
+    .game-info{
+        display: block;
+        margin-bottom: 20PX;
+        margin-top: 20PX;
+        margin-left: 20PX;
+    }
+    
+
+    #ALEX_DIAS {
+        display: none;
+    }
+}
+
+
+    .icon-remove {
+        position: absolute;
+        top: 85%;
+        right: 15px;
+        cursor: pointer;
+        transition: all 0.1s;
+        color: red;
+        font-size: 0.70rem;
+    }
+    
+    .icon-remove:hover {
+        color: #585454;
+    }
+    /********barra dinamica inicio******/
+    #barra:hover,
+    #barra2:hover,
+    #barra3:hover,
+    #barra4:hover, 
+    #barra5:hover {
+        color: #7372d5;
+        cursor: pointer;
+    }
+
+    #barra,
+    #barra2,
+    #barra3,
+    #barra4,
+    #barra5 {
+        cursor: pointer;
+        
+    }
+
+    /********barra dinamica fim******/
+    /************footer************/
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0; 
+        right: 0;
+        left: 0;
+        background: #25136e;
+        z-index: 9997;
+        padding: 10px 0;
+      
+    }
+    
+    footer button {
+        background: #7372d5;
+        color: #fff;
+        border: none;
+        border-radius: 35%;
+        padding: 0.45rem;
+        margin: 0.35rem;
+        position: relative;
+        transition: all 0.8s;
+        cursor: pointer;
+    }
+    
+    footer button:hover {
+        transform: scale(1.2);
+        background: #31a52a;
+    }
+    
+    
+    /**************modal***************/
+    
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #e5e5e5 ;
+        padding: 20px;
+        border: 1px solid #2f232e;
+        width: 415px;
+        border-radius: 12px;
+        z-index: 9999;
+        display: none;
+    }
+    
+    .modal.abrir {
+        display: block !important;
+    }
+    
+    .background-modal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.9;
+        z-index: 9998;
+        display: none;
+    }
+    
+    .background-modal.abrir {
+        display: block !important;
+    }
+    
+    .btn-fechar-modal {
+        position: absolute;
+        top: -25px;
+        right: -18px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #2d2c2c;
+        background: #7372d5;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .frm-linha {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .frm-linha label {
+        margin-bottom: 6px;
+        color: #272525;
+    }
+    
+    .frm-linha input {
+        padding: 15px;
+        border-radius: 12px;
+        outline: none;
+        border: 1px solid #191818;
+        font-size: 1.rem;
+        color: #272525;
+    }
+    
+    .frm-linha button {
+        background: #7372d5;
+        color: #ccc;
+        border: 1px solid #191818;
+        padding: 7px;
+        margin-bottom: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+        height: 50px;
+        font-size: 1.3rem;
+        transition: all 0.8s;
+    }
+    
+    .frm-linha button:hover {
+        background: #31a52a;
+    }
+    
+    .frm-linha label[for="arquivo"] {
+        background: #fff;
+        padding: 1rem;
+        cursor: pointer;
+        text-align: center;
+        color: #272525;
+    }
+    
+    @media (max-width: 450px) {
+    
+        .modal {
+          width: 335px;
+        }
+    }
+    
+    
+
+    
+    /**********final modal**********/
+    </style>
+
+<!--body-->
+<body>
+
+    <header>
+      <a href="# " class="logo" >Album</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-bag-line" onclick="self.close()">✖</i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <ul>
+                <li>
+                    <div>
+                        <img src="imagem/Album_Dam/1080x1080_Poncho.png">
+                    </div>
+                    <div class="game-info">
+                        <h2>D-DAM-JACQUARD-01-FF-FR-GOLA-2CABOS-REM-1X1B-FIO-SEP4</h2><br>
+                        <h3>R$ 300,00</h3>
+                        <h6>Atualizado 21/04/2025</h6>
+                        <h6>Damaris</h6>
+                    </div>
+                    <span class="icon-remove">
+                        <span class="material-symbols-outlined">#1</span>
+                    </span>
+                </li>
+   <!--go Barra dinãmica-->
+   <div id="barra"><strong>📝Arquivos relacionados</strong></div>
+   <div id="painel">
+    D-DAM-JACQUARD-01-FF-MG-GOLA-2CABOS-SIS1-DESL
+   </div><br>
+                <li>
+                    <div>
+                        <img src="imagem/Album_Dam/1047x1047_Masculina_lista.png">
+                    </div>
+                    <div class="game-info">
+                        <h2>D-DAM-CAMISA-02-NERV-LISTA-FR-G-280AG</h2><br>
+                        <h3>R$ 300,00</h3>
+                        <h6>Atualizado 21/04/2025</h6>
+                        <h6>Damaris</h6>
+                    </div>
+                    <span class="icon-remove">
+                        <span class="material-symbols-outlined">#2</span>
+                    </span>
+                </li>
+   <!--go Barra dinãmica-->
+   <div id="barra2"><strong>📝Arquivos relacionados</strong></div>
+   <div id="painel2">
+    D-DAM-CAMISA-02-NERV-LISTA-FR-GG-290AG<br>
+    D-DAM-CAMISA-02-NERV-LISTA-FR-M-270AG<br>
+    D-DAM-CAMISA-02-NERV-LISTA-MG-M-186AG<br>
+    D-DAM-CAMISA-02-NERV-LISTA-MG-GG-210AG<br>
+    D-DAM-CAMISA-02-NERV-LISTA-MG-G-198AG<br>
+    D-DAM-CAMISA-02-NERV-LISTA-CO-GG-LISA<br>
+     </div><br>
+                <li>
+                    <div>
+                        <img src="imagem/Album_Dam/750x750_Cacharrel.png">
+                    </div>
+                    <div class="game-info">
+                        <h2>D-DAM-CACHARREL-01</h2><br>
+                        <h3>R$ 300,00</h3>
+                        <h6>Atualizado 21/04/2025</h6>
+                        <h6>Damaris</h6>
+                    </div>
+                    <span class="icon-remove">
+                        <span class="material-symbols-outlined">#3</span>
+                    </span>
+                </li>
+   <!--go Barra dinãmica-->
+   <div id="barra3"><strong>📝Arquivos relacionados</strong></div>
+   <div id="painel3">
+
+     </div><br>
+
+                <li>
+                    <div>
+                        <img src="imagem/Album_Dam/900x900_masculina_loc_03.png">
+                    </div>
+                    <div class="game-info">
+                        <h2>D-DAM-CAMISA-03-JAC-LOC-FR-G</h2><br>
+                        <h3>R$ 300,00</h3>
+                        <h6>Atualizado 21/04/2025</h6>
+                        <h6>Damaris</h6>
+                    </div>
+                    <span class="icon-remove">
+                        <span class="material-symbols-outlined">#4</span>
+                    </span>
+                </li>
+   <!--go Barra dinãmica-->
+   <div id="barra4"><strong>📝Arquivos relacionados</strong></div>
+   <div id="painel4">
+    D-DAM-CAMISA-03-JAC-LOC-CO-G<br>
+    D-DAM-CAMISA-03-JAC-LOC-MG-G<br>
+     </div><br>
+
+                 <li>
+                    <div>
+                        <img src="imagem/Album_Dam/900x900_masculina_loc_04.png">
+                    </div>
+                    <div class="game-info">
+                        <h2>D-DAM-CAMISA-04-JAC-LOC-FR-G</h2><br>
+                        <h3>R$ 300,00</h3>
+                        <h6>Atualizado 21/04/2025</h6>
+                        <h6>Damaris</h6>
+                    </div>
+                    <span class="icon-remove">
+                        <span class="material-symbols-outlined">#5</span>
+                    </span>
+                </li>
+   <!--go Barra dinãmica-->
+   <div id="barra5"><strong>📝Arquivos relacionados</strong></div>
+   <div id="painel5">
+    D-DAM-CAMISA-04-JAC-LOC-MG-GG<br>
+    D-DAM-CAMISA-04-JAC-LOC-MG-G<br>
+    D-DAM-CAMISA-04-JAC-LOC-CO-G<br>
+     </div><br>
+
+     <li>
+        <div>
+            <img src="imagem/Album_Dam/878x878_Croche.png">
+        </div>
+        <div class="game-info">
+            <h2>D-DAM-CROCHE-01-SAIA</h2><br>
+            <h3>R$ 300,00</h3>
+            <h6>Atualizado 21/04/2025</h6>
+            <h6>Damaris</h6>
+        </div>
+        <span class="icon-remove">
+            <span class="material-symbols-outlined">#6</span>
+        </span>
+    </li>
+<!--go Barra dinãmica-->
+<div id="barra5"><strong>📝Arquivos relacionados</strong></div>
+<div id="painel5">
+
+</div><br>
+
+
+    <!--********************-->
+    <!--inicio card contato ALEX_DIAS -->
+     <li>
+        <div>
+            <img src="imagem/Album_Dam/ALEX_DIAS.png" id="ALEX_DIAS">
+        </div>
+        <div class="game-info">
+            <span>Criado Por <a href="https://www.alexwebdesign.com" target="_blank" >Alex Web Design</a> | <span class="far fa-copyright"></span> 2025 Todos os Direitos Reservados.</span>
+            <h6>Atualizado 21/04/2025</h6><br>
+
+            <a href="mailto:alexxdias.ad@gmail.com" class="footer-link">alexxdias.ad@gmail.com</a>
+        </div>
+    </li>
+    <!--final card contato ALEX_DIAS -->
+            </ul>
+        </div>
+    </div>
+
+    <!--Modais-->
+    <div class="modal" data-modal="adicionar-jogo">
+        <button class="btn-fechar-modal">
+            <span class="material-symbols-outlined">  <!--material-symbols-outlined-->
+                Close  
+            </span>
+        </button>
+            <form>
+                <!--Adicionar-PRG-->
+                <div class="frm-linha">
+                    <label for="nome">Nome para Adicionar Arquivo</label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="frm-linha">
+                    <label for="img">Foto</label>
+                    <input type="text" id="img">
+                </div>
+                <div class="frm-linha">
+                    <label for="preco">Preço</label>
+                    <input type="number" step="0.50" id="preco">
+                </div>
+                <div class="frm-linha">
+                <button  id="btnSalvar">Salvar</button>
+                </div>
+            </form>
+    </div>  
+
+            <!--Upload-->
+            <div class="modal" data-modal="upload-jogos" >
+                <button class="btn-fechar-modal">
+                    <span class="material-symbols-outlined">  <!--material-symbols-outlined-->
+                      Close  
+                    </span>
+                </button> 
+                    <form>
+                        <div class="frm-linha">
+                            <label for="arquivo">Selecionar Arquivo para Upload</label>
+                            <input type="file" style="display: none;" id="arquivo">
+                        </div>
+                    </form>
+            </div>
+
+            <!--Download-->
+            <div class="modal" data-modal="download-jogos">
+                <button class="btn-fechar-modal">
+                    <span class="material-symbols-outlined">  <!--material-symbols-outlined-->
+                        Close
+                    </span>
+                </button> 
+                    <form>
+                        <div class="frm-linha">
+                            <label for="nomeArquivo">Nome do arquivo para Download</label>
+                            <input type="text" id="NomeArquivo">
+                        </div>
+                        <div class="frm-linha">
+                            <button id="btnFazerDownload">Download</button>
+                        </div>
+                    </form>    
+            </div>
+        
+    
+    <div class="background-modal"></div>
+ 
+    <footer>
+        <div>
+            <button id="btnAdd">
+                <span class="material-symbols-outlined"> <!--material-symbols-outlined-->
+                    add_cards
+                </span>
+            </button>
+            <button id="btnImportar">
+                <span class="material-symbols-outlined"> <!--material-symbols-outlined-->
+                    file_upload
+                </span>
+            </button>
+            <button id="btnDownload">
+                <span class="material-symbols-outlined"> <!--material-symbols-outlined-->
+                    download
+                </span>
+            </button>
+          
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+<script>
+
+let btnAdd = document.querySelector('#btnAdd');
+let btnImportar = document.querySelector('#btnImportar');
+let btnDownload = document.querySelector('#btnDownload');
+
+btnAdd.addEventListener('click', () => {
+    document.querySelector('[data-modal="adicionar-jogo"]')
+        .classList.toggle('abrir');
+    document.querySelector('.background-modal')
+        .classList.toggle('abrir');
+});
+
+btnImportar.addEventListener('click', () => {
+    document.querySelector('[data-modal="upload-jogos"]')
+        .classList.toggle('abrir');
+    document.querySelector('.background-modal')
+        .classList.toggle('abrir');
+});
+
+btnDownload.addEventListener('click', () => {
+    document.querySelector('[data-modal="download-jogos"]')
+        .classList.toggle('abrir');
+    document.querySelector('.background-modal')
+        .classList.toggle('abrir');
+});
+
+
+document.querySelectorAll('.btn-fechar-modal').forEach((x) => {
+    x.addEventListener('click', function(){
+        this.parentElement.classList.toggle('abrir');
+        document.querySelector('.background-modal')
+            .classList.toggle('abrir');
+    })
+});
+
+</script>
+    <!-- Script JQuery para animação de barra dinâmica-->
+    <script src = "jquery.js"></script>
+<script>
+        $(document).ready(function(){
+            $("#barra").click(function(){
+                $("#painel").slideToggle("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#barra2").click(function(){
+                $("#painel2").slideToggle("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#barra3").click(function(){
+                $("#painel3").slideToggle("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#barra4").click(function(){
+                $("#painel4").slideToggle("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#barra5").click(function(){
+                $("#painel5").slideToggle("slow");
+            })
+        })
+
+        $(document).ready(function(){
+            $("#barra6").click(function(){
+                $("#painel6").slideToggle("slow");
+            })
+        })
+
+</script>
+
+</html>
+
